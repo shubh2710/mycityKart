@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.mycitycart.com.mycitycart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activties.Home" />
+        <activity android:name=".activties.ShowCase" />
+        <activity android:name=".activties.signInOrLogIn" />
+        <activity android:name=".activties.SignInOrLoginTabs" />
+        <activity android:name=".activties.ActivityMyCart" />
+        <activity android:name=".activties.ActivityMyWishList" />
+        <activity android:name=".activties.SearchActivity" />
+        <activity android:name=".activties.ShopsListActivity" />
+        <activity android:name=".activties.testActivity" />
+        <activity android:name=".activties.SimpleScannerActivity" />
+        <activity android:name=".activties.ActivitySearchBox" />
+        <activity android:name=".activties.ActivityFilters" />
+        <activity
+            android:name=".activties.SortActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activties.ActivityShopesShowcase" />
+        <activity android:name=".activties.FrontSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activties.ShopShowCaseActivity"></activity>
+    </application>
+
+</manifest>

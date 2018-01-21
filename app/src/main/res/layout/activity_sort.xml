@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sort"
+    android:padding="10dp"
+    android:layout_width="210dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/cardview_light_background"
+    tools:context="in.mycitycart.com.mycitycart.activties.SortActivity">
+
+    <RadioGroup
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        >
+        <RadioButton
+            android:buttonTint="#000"
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:text="Price High To Low"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            />
+
+
+            <RadioButton
+                android:buttonTint="#000"
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Low To High"
+                android:textColor="#000"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:buttonTint="#000"
+                android:id="@+id/radio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Product Rate High To Low"
+                android:checked="false"
+                />
+
+
+            <RadioButton
+                android:buttonTint="#000"
+                android:id="@+id/radio6"
+                android:layout_width="match_parent"
+
+                android:textColor="#000"
+                android:text="Product New To Old"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:buttonTint="#000"
+                android:id="@+id/radio7"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:text="Shop Rate High To Low"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

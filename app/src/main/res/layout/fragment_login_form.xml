@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.mycitycart.com.mycitycart.fragments.UserDetailMyProfile">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In With Ushopper" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <CheckBox
+        android:text="I accept Terms and Privacy Policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Get e-Mail from Ushopper.in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
+    <Button
+        android:text="Log In"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:textColor="@color/cardview_light_background"
+        android:layout_height="40dp"
+        android:id="@+id/b_button_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/com_facebook_button_icon"
+            android:layout_width="match_parent"
+            android:text="Login with facebook"
+            android:textColor="@color/com_facebook_button_login_silver_background_color"
+            android:background="@drawable/com_facebook_button_background"
+            android:id="@+id/b_log_in_buttonfb"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_google"
+            android:paddingLeft="10dp"
+            android:text="Sign In with google"
+            android:background="@color/cardview_light_background"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:id="@+id/sign_in_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

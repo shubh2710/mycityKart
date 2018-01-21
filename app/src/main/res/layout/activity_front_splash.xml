@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="in.mycitycart.com.mycitycart.activties.FrontSplashActivity">
+    <FrameLayout
+        android:id="@+id/ll_frontpage"
+        android:layout_width="match_parent"
+        android:background="@drawable/back1"
+        android:layout_height="match_parent"></FrameLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_bucket_with_plus"
+            android:id="@+id/imageView5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="UShopper.com"
+            android:textSize="40dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Buy anything any time"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:layout_marginTop="300dp"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb_frontSplashPage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Checking net conectivity"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
